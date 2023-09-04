@@ -1,0 +1,624 @@
+ @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Spirax&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Chicle&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+ body {
+     background-image: url(imagenes/fondo.jpg);
+     background-size: cover;
+     opacity: 90%;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+ }
+
+ header {
+     width: 100%;
+     height: 25%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     background-color: rgb(255, 255, 255);
+     z-index: 1;
+ }
+
+ /*IMAGENES HEADER CATALOGO QUESOS*/
+ .picadas{
+    width: 59.5%;
+   margin: auto;
+    margin-top:3.5%;
+}
+.contenedorpicadas{
+    text-align: center;
+   
+}
+/* IMAGENES HEADER*/
+.vaca{
+    border-color: black;
+    border-width: 3px;
+    border-style: ridge;
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    height: 215px;
+    max-height: 220px;
+    text-align: center;
+    margin-top: 2.5%;
+    margin-right: 5%;
+}
+.vaca1{
+    width: 100%;
+   height: 100%;
+    
+ }
+ .vaca2{
+    width: 100%;
+    height: 100%;
+   
+ }
+.logo{
+    margin-left: 5%;
+}
+
+
+ /*IMAGENES Y TRANSICIONES*/
+ .tr1:hover,
+ .tr2:hover,
+ .tr3:hover {
+
+     transition-duration: 1.5s;
+     border-radius: 50%;
+     border-color: #191970;
+     border-style: ridge;
+     border-width: 1px;
+     box-shadow: 0px 15px 100px 10px #4169E1;
+     transform: scale(1, 1.4);
+ }
+
+ .tr1,
+ .tr2,
+ .tr3 {
+     max-height: 300px;
+     max-width: 500px;
+     overflow: hidden;
+     border-radius: 50%;
+     margin-left: 5%;
+     border-style: ridge;
+     border-color: #F4A460;
+     border-width: 2px;
+     margin-top: 15%;
+     object-fit: cover;
+     object-position: center center;
+
+
+ }
+
+ .imagenes {
+     margin-top: 5%;
+     display: flex;
+ }
+/*INDEX*/
+
+ .presentacion {
+     font-size: 45px;
+     font-family: 'Chicle', cursive;
+     padding: 3%;
+     margin-left: 10%;
+     margin-right: 10%;
+     text-align: center;
+
+ }
+
+ .border {
+     border: 5px;
+     border-radius: 30px;
+     border-color: black;
+     border-style: double;
+ }
+
+.certificado{
+    margin: auto;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.certificadoimg1{
+    width: 20%;
+}
+.certificadoimg{
+    width: 15% ;
+}
+.certificadolink{
+    font-family: 'Chicle', cursive;
+    font-size: 70px
+}
+ /*header*/
+
+
+
+ .buscador {
+     padding: 5px;
+     text-align: center;
+     width: 250px;
+     border-radius: 10px;
+     border-style: groove;
+     border-width: 2px;
+     border-color: rgb(190, 147, 36);
+ }
+
+ .headersuperior {
+     max-width: 1800px;
+     margin: auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     width: 1800px;
+     height: 172px;
+ }
+
+
+ /*BARRA menu*/
+ .menu {
+     width: 100%;
+     height: 50px;
+     background: #4169E1;
+     padding: 0px 20px;
+     margin-top: 2.3%;
+     border-color: #191970;
+     border-style: ridge;
+     border-width: 2px;
+    
+
+ }
+
+ .menu2 {
+     max-width: 1200px;
+     margin: auto;
+     height: 100%;
+     margin-top: -1.5%;  
+ }
+
+ nav {
+     height: 100%;
+ }
+
+ nav>ul {
+     height: 100%;
+     display: flex;
+ }
+
+ nav ul li {
+     list-style: none;
+     height: 100%;
+     position: relative;
+ }
+
+ nav>ul>li>a {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     padding: 50px;
+     font-size: 20px;
+     text-transform: uppercase;
+     transition: all 300ms ease;
+     color: white;
+ }
+
+ nav>ul>li>a:hover {
+     transform: scale(1.3);
+     height: 100%;
+     width: 100%;
+ }
+
+ /*SUBMENU*/
+
+ nav ul li ul {
+     width: 200px;
+     display: flex;
+     flex-direction: column;
+     background: white;
+     position: absolute;
+     top: 90px;
+     left: -5px;
+     padding: 14px 0px;
+     visibility: hidden;
+     opacity: 0;
+     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+     z-index: 10;
+     transition: all 300ms ease;
+ }
+
+ nav ul li:hover ul {
+     visibility: visible;
+     opacity: 1;
+     top: 70px;
+
+ }
+
+ nav ul li ul li a {
+     display: block;
+     color: #4169E1;
+     padding: 6px;
+     padding-left: 14px;
+     margin-top: 5px;
+     font-size: 14px;
+     text-transform: uppercase;
+     transition: all 300ms ease;
+     list-style: none;
+
+ }
+
+ nav ul li ul li a:hover {
+     background: #4169E1;
+     color: white;
+     transform: scale(1.3);
+     padding-left: 30px;
+     font-size: 14px;
+
+ }
+
+
+ /*CATALOGO QUESOS IZQUIERDA*/
+
+ .imgquesos {
+     margin-left: 10%;
+     display: flex;
+     padding: 1%;
+     margin-top: 18%;
+ }
+
+ .textoquesos {
+     margin-top: 1%;
+     font-family: "spirax", cursive;
+     font-size: 70px;
+     margin-left: 30%;
+     text-align: center;
+ }
+
+ .descripcion {
+     font-family: "pacifico", cursive;
+     margin-top: -12%;
+     margin-left: 30%;
+     margin-right: 5%;
+     font-size: 30px;
+     text-align: center;
+ }
+ .imgquesosultimo{
+    margin-left: 10%;
+    display: flex;
+    padding: 1%;
+    margin-top: 1%;
+ }
+
+ /*CATALOGO QUESOS DERECHA*/
+ .imgquesosright {
+     margin-left: 10%;
+     display: flex;
+     padding: 1%;
+ }
+
+ .textoquesosright {
+     margin-top: 1%;
+     font-family: "spirax", cursive;
+     font-size: 70px;
+     margin-left: 30%;
+     text-align: center;
+ }
+
+ .descripcionright {
+     font-family: "pacifico", cursive;
+     margin-top: -12%;
+     margin-left: 30%;
+     margin-right: 5%;
+     font-size: 30px;
+     text-align: center;
+
+ }
+
+ /*LINEAS DIVISORAS*/
+ hr {
+     margin-top: 2%;
+     border-color: black;
+     border-width: 3px;
+     border-style: dashed;
+ }
+
+ /*REDES*/
+ .face {
+     border-radius: 70px;
+     width: 50px;
+     margin-top: 190px;
+     margin-left: -250px;
+ }
+
+ .insta {
+     width: 70px;
+     margin-top: 190px;
+     margin-left: -180px;
+ }
+
+ .wapp {
+    border-radius: 50%;
+    width: 50px;
+    margin-top: 190px;
+    margin-left: -90px;
+}
+
+.face2 {
+    border-radius: 70px;
+    width: 50px;
+    margin-top:400%;
+    margin-left: 60%;
+}
+
+.insta2 {
+    width: 70px;
+    margin-top: 290%;
+    margin-left: -200%;
+}
+
+ /*COMO LLEGAR*/
+ .mapa {
+     margin-top: -16%;
+     text-align: center;
+     z-index: -1;
+
+ }
+
+ .ubi {
+     font-family: "pacifico", cursive;
+     font-size: 30px;
+     text-align: center;
+     margin-top: 25%;
+     margin-left: 100px;
+     width: 380px;
+     height: 200px;
+     border: rgb(167, 164, 2);
+     border-style: double;
+     border-width: 10px;
+ }
+
+ /* HISTORIA*/
+
+ .video {
+     width: 95%;
+     height: 100%;
+     object-position: left center;
+     border: black;
+     border-width: 4px;
+     border-style: ridge;
+     border-bottom-right-radius: 70px;
+     border-top-right-radius: 70px;
+     margin-left: 2%;
+     text-align: center;
+     display: flex;
+     background-color: #03030331;
+     margin-top: 20%;
+ }
+.fondohistoria1{
+    border-width: 5px;
+    border-style: dotted;
+    border-color: grey;
+    margin-top: 2%;
+    width: 100%;
+    height: 400px;
+    margin-top: 2%;
+    background-color: #facf8e;
+    border-radius: 70px;
+    border-color: black;
+}
+ .historia1 {
+     font-family: 'Arvo', serif;
+     font-size: xx-large;
+    
+ }
+
+ .fondohistoria2 {
+     border-width: 3px;
+     border-style: ridge;
+     margin-top: 2%;
+     width: 95%;
+     height: 250px;
+     margin-left: 2%;
+     background-color: #03030331;
+     border-radius: 70px;
+     border-color: black;
+
+ }
+
+ .historia2 {
+     font-family: 'Arvo', serif;
+     font-size: xx-large;
+     text-align: center;
+     background-color: #facf8e;
+     border-radius: 70px;
+     margin: 1%;
+     margin-left: 2%;
+     margin-right: 2%;
+     border-color: grey;
+     border-width: 5px;
+     border-style: dotted;
+
+
+ }
+
+ .fondohistoria3 {
+     border-width: 3px;
+     border-style: ridge;
+     margin-top: 2%;
+     width: 95%;
+     height: 250px;
+     margin-left: 2%;
+     background-color: #03030331;
+     border-radius: 70px;
+     border-color: black;
+     display: flex;
+ }
+
+
+ .historia3 {
+     font-family: 'Arvo', serif;
+     font-size: xx-large;
+     text-align: center;
+     background-color: #facf8e;
+     border-radius: 70px;
+     margin: 1%;
+     margin-left: 2%;
+     margin-right: 2%;
+     border-color: grey;
+     border-width: 5px;
+     border-style: dotted;
+ }
+
+ .fotohistoria3 {
+     width: 30%;
+     border-style: ridge;
+     border-color: black;
+     border-top-left-radius: 70px;
+     border-bottom-left-radius: 70px;
+     border-left: none;
+     border-bottom: none;
+     border-top: none;
+ }
+
+ .fotohistoriaright {
+     width: 30%;
+     border-style: ridge;
+     border-color: black;
+     border-top-right-radius: 70px;
+     border-bottom-right-radius: 70px;
+     border-top: none;
+     border-bottom: none;
+     border-right: none;
+ }
+/*PAGINA COMPRAS*/
+.compras{
+   display: flex;
+   width: 70%;
+}
+.titulo{
+    margin: auto;
+    font-size: 100px;
+    font-family: "arvo";
+}
+.titulo-img{
+    margin: auto;
+}
+
+.compras-quesos{
+    display:inline-flex;
+    max-width: 1900px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    margin-top: 20%;
+    overflow:auto;
+    text-align: center;
+}
+
+#img{
+    width:300px;
+    margin: auto;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+
+}
+
+.compra1{
+   margin: auto;
+    border-width: 1px;
+    border-color: black;
+    border-style:dashed;
+    width: 600px;
+    text-align: center;
+}
+
+
+.boton.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 40%;
+}
+
+.boton.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton.cinco svg {
+	color: #fffdfd;
+	width: 35px;
+	height: 35px;
+}
+
+.boton.cinco:hover {
+	background: #7b9b05;
+}
+
+.boton.cinco:hover .icono {
+	left: calc(100% - 50px);
+	opacity: 1;
+}
+
+.boton.cinco:hover span {
+	left: 20px;
+}
+.contenedor {
+	width: 1200px;
+	margin: auto;
+	padding: 100px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.contenedor-botones {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+}
+
+.boton {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background: #c9bb00;
+	color: #fffbfb;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+	text-transform: uppercase;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+    
+}
+
+#volver{
+    margin-top: 2%;
+}
